@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <copy todir="/home/binhnv/java/workspace/exo.social.component.iocpractice/target/exo.social.component.iocpractice-1.0-SNAPSHOT/WEB-INF/classes" failonerror="false">
+    <fileset dir="/home/binhnv/java/workspace/exo.social.component.iocpractice/src/main/webapp/WEB-INF/classes">
+      <include name="**/*_en.properties"/>
+    </fileset>
+    <globmapper to="*.properties" from="*_en.properties"/>
+  </copy>
+</target>
+</project>
