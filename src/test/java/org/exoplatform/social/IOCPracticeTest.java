@@ -51,7 +51,7 @@ public class IOCPracticeTest extends AbstractKernelTest {
   }
   
   public void testExternalPlugin() {
-    assertEquals(1, a.getNumberOfListener());
+    assertEquals(2, a.getNumberOfListener());
     a.newListenerAction();
   }
   

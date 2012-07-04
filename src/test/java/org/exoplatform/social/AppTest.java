@@ -1,5 +1,7 @@
 package org.exoplatform.social;
 
+import org.exoplatform.container.xml.InitParams;
+
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -25,7 +27,12 @@ public class AppTest
      */
     public static Test suite()
     {
-        return new TestSuite( AppTest.class );
+      AClass a = new AClass(new BClass(new InitParams())) ;
+      a.addListener(new SimpleListenerImpl()) ;
+      
+      return new TestSuite( AppTest.class );
+        
+        
     }
 
     /**

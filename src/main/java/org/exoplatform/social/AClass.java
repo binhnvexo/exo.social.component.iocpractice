@@ -46,6 +46,8 @@ public class AClass {
   }
   
   public void newListenerAction() {
+    //Do dmt 
+    ///Broadcast event 
     for (SimpleListener listener : listeners) {
       listener.excute();
     }
